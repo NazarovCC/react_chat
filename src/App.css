@@ -1,38 +1,59 @@
 .App {
+  max-width: 800px;
+  margin: 150px auto;
+  padding: 15px;
+  height: 400px;
+  border-radius: 5px;
+
+  background-color: antiquewhite;
+}
+.app_header {
   text-align: center;
+  margin-bottom: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.messages {
+  margin: auto;
+  background-color: white;
+  max-width: 600px;
+  height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.messages_body {
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.messages_one_message {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
+  background-color: beige;
+  padding: 5px;
+  border-radius: 5px;
 }
+.messages_one_message_user {
 
-.App-link {
-  color: #61dafb;
 }
+.messages_one_message_user_avatar {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: none;
+  background-size: contain;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.messages_one_message_user_sendor {
+  margin-top: 5px;
+  font-size: 10px;
+  color:blue;
+}
+.messages_one_message_text {
+  font-size: 13px;
+  word-wrap: break-word;
+}
+.messages_one_message_data {
+  font-family: 'Courier New', Courier, monospace;
 }
